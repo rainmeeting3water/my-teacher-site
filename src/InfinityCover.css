@@ -1,0 +1,98 @@
+.infinity-cover{isolation:isolate;position:relative;overflow:hidden;min-height:min(790px,calc(100svh - 82px));display:flex;flex-direction:column;justify-content:center;background:#101e32;color:#f4f4ed;scroll-margin-top:82px;border-bottom:1px solid #a5c0d526}
+.infinity-atmosphere{position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#101e32f7 3%,#101e32d9 51%,#101e32c9),linear-gradient(0deg,#101e32,transparent 60%),url('/images/arc-hero.webp') center 46%/cover no-repeat;opacity:.88;pointer-events:none}
+.infinity-cover::before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(ellipse at 75% 45%,#47667c38,transparent 50%),radial-gradient(circle at 13% 16%,#f2dba9 1px,transparent 1.5px),radial-gradient(circle at 88% 80%,#c5dfef 1px,transparent 1.5px),radial-gradient(circle at 47% 10%,#a9c0d0 1px,transparent 1.5px),radial-gradient(circle at 6% 69%,#b3c4d2 1px,transparent 1.5px);pointer-events:none}
+.infinity-cover-inner{width:min(1320px,calc(100% - 112px));margin-inline:auto;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;padding-block:86px 66px;flex:1}
+.infinity-copy{position:relative;z-index:1;padding-block:16px;max-width:610px}
+.infinity-eyebrow{font-size:.875rem;letter-spacing:.15em;color:#d6bc87;font-weight:500;margin-bottom:30px}
+.infinity-copy h1{font-size:clamp(2.1rem,3.8vw,3.6rem);font-weight:500;line-height:1.65;letter-spacing:.08em;text-wrap:balance}
+.infinity-copy h1 em{font-style:normal;color:#f4d199}
+.infinity-intro{font-size:1.125rem;line-height:1.95;letter-spacing:.04em;color:#c4d1de;max-width:440px;margin-top:27px;text-wrap:pretty}
+.infinity-actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:38px}
+.infinity-enter{display:inline-flex;align-items:center;justify-content:space-between;gap:26px;min-height:53px;padding:12px 21px;color:#18273b;background:#f1ca8b;border:1px solid #f7dba9;border-radius:5px;font-weight:600;font-size:1rem;transition:background .2s,box-shadow .2s;line-height:1.7}
+.infinity-enter:hover{background:#ffe0ad;box-shadow:0 0 26px #dcb67618}
+.infinity-enter>span:last-child{font-size:1.35rem;font-weight:400}
+.infinity-skip{color:#dce5ec;font-size:1rem;padding-block:11px;text-decoration:underline;text-decoration-color:#dce5ec55;text-underline-offset:6px}
+.infinity-skip:hover{text-decoration-color:#f0ca8b;color:#f4d199}
+.infinity-scene{align-self:center;min-width:0;margin:0 -18px 0 -10px;position:relative}
+.infinity-diagram{display:block;width:100%;height:auto;overflow:visible}
+.infinity-construction{opacity:.23}
+.infinity-loop{transform-origin:260px 160px;opacity:1}
+.infinity-loop-base{filter:drop-shadow(0 0 8px #f4d19935)}
+.infinity-loop-light{animation:infinity-orbit 9s linear infinite;filter:drop-shadow(0 0 5px #f4d19985)}
+.infinity-star-points{opacity:.7}
+.infinity-calculus{opacity:0;transform:translateY(5px);transform-origin:260px 160px}
+.infinity-phrases{position:relative;min-height:115px;text-align:center;padding-inline:18px;margin-top:-5px}
+.infinity-current-phrase{display:block;color:#edddbc;font-size:1.0625rem;line-height:1.85;letter-spacing:.07em;text-wrap:balance;animation:infinity-phrase-enter .6s ease-out both}
+.infinity-equation{display:flex;align-items:center;justify-content:center;gap:8px;color:#b4c6d6;font-family:Georgia,"Times New Roman",serif;font-size:1rem;opacity:0;margin-top:13px;line-height:1.3;white-space:nowrap}
+.infinity-equation sub{align-self:flex-end;font-size:.68em;margin-left:-5px;margin-right:2px}
+.infinity-derivative-equation{position:absolute;left:0;right:0;top:31px}
+.infinity-integral-equation{position:absolute;left:0;right:0;top:31px;display:flex;flex-wrap:wrap;gap:9px 7px;font-size:.9375rem;line-height:1.7;white-space:normal}
+.infinity-riemann-formula{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.infinity-riemann-formula>sub{font-size:.65em;margin-left:-3px}
+.infinity-sum{position:relative;font-size:1.65em;line-height:1.2;margin-inline:7px 5px;padding-block:6px 8px}
+.infinity-sum>sup,.infinity-sum>sub{position:absolute;font-size:.35em;line-height:1;left:50%;transform:translateX(-50%);margin:0!important}
+.infinity-sum>sup{top:0}.infinity-sum>sub{bottom:0;white-space:nowrap}
+.infinity-integral-result{white-space:nowrap}
+.infinity-integral-result>sub,.infinity-integral-result>sup{font-size:.68em;margin:0 0 0 -3px;vertical-align:baseline;position:relative}
+.infinity-integral-result>sup{top:-.8em}.infinity-integral-result>sub{top:.5em}
+.infinity-riemann-layer{opacity:0;transition:opacity .22s ease-out}
+.infinity-fraction{display:inline-flex;flex-direction:column;text-align:center;font-size:.9em;line-height:1.4}
+.infinity-fraction>span:first-child{border-bottom:1px solid #b4c6d680;padding:0 3px 2px}
+.infinity-fraction>span:last-child{padding-top:1px}
+.infinity-cover-bottom{width:min(1320px,calc(100% - 112px));margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:28px;border-top:1px solid #a4bbd025;padding-block:19px 22px;color:#aebdcc}
+.infinity-cover-bottom>p{font-size:.875rem;letter-spacing:.07em;line-height:1.8}
+.infinity-controls{display:flex;align-items:center;justify-content:flex-end;gap:16px;flex-shrink:0}
+.infinity-controls button{display:inline-flex;gap:8px;align-items:center;min-height:37px;color:#c7d3dd;background:transparent;border:1px solid #c2d3e236;border-radius:4px;padding:5px 10px;font-size:.8125rem;line-height:1.6;transition:color .2s,border-color .2s}
+.infinity-controls button:hover{color:#f1d19a;border-color:#efd09a88}
+.infinity-controls button>span{min-width:12px;font-size:.875rem}
+.infinity-motion-status{color:#aebdcc;font-size:.8125rem;line-height:1.6;padding:5px 0}
+.infinity-cover :focus-visible{outline:2px solid #f6d28e;outline-offset:5px}
+.infinity-cover[data-paused=true] .infinity-loop-light{animation-play-state:paused}
+.infinity-cover[data-paused=true] .infinity-current-phrase{animation:none;opacity:1;transform:none}
+.infinity-cover[data-phase=converging] .infinity-loop{animation:infinity-gather .63s cubic-bezier(.5,0,.7,.25) forwards}
+.infinity-cover[data-phase=converging] .infinity-calculus{animation:infinity-resolve .6s ease-out .54s forwards}
+.infinity-cover[data-phase=converging] .infinity-equation{animation:infinity-resolve .35s ease-out .78s forwards}
+.infinity-cover:not([data-phase=loop]):not([data-phase=converging]) .infinity-loop{opacity:0;transform:scale(.035)}
+.infinity-cover:not([data-phase=loop]):not([data-phase=converging]) .infinity-calculus{opacity:1;transform:none}
+.infinity-cover[data-phase=derivative] .infinity-derivative-equation{opacity:1;transform:none}
+.infinity-cover[data-phase=derivative] .infinity-calculus{animation:infinity-resolve .28s ease-out both}
+.infinity-cover[data-phase=converging] .infinity-integral-equation{animation:none}
+.infinity-cover[data-phase^=riemann] .infinity-integral-equation,.infinity-cover[data-phase=arrived] .infinity-integral-equation{opacity:1;transform:none}
+.infinity-cover[data-phase^=riemann] .infinity-tangent,.infinity-cover[data-phase=arrived] .infinity-tangent{opacity:.25;transition:opacity .3s}
+.infinity-cover[data-phase=riemann-4] .infinity-riemann-layer[data-n="4"],.infinity-cover[data-phase=riemann-8] .infinity-riemann-layer[data-n="8"],.infinity-cover[data-phase=riemann-16] .infinity-riemann-layer[data-n="16"],.infinity-cover[data-phase=arrived] .infinity-riemann-layer[data-n="16"]{opacity:1}
+.infinity-cover[data-phase=converging] .infinity-loop-light{animation-play-state:running}
+@keyframes infinity-orbit{to{stroke-dashoffset:-100}}
+@keyframes infinity-phrase-enter{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@keyframes infinity-gather{0%{opacity:1;transform:scale(1)}65%{opacity:.85;transform:scale(.3)}100%{opacity:0;transform:scale(.035)}}
+@keyframes infinity-resolve{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+html[lang=en] .infinity-copy h1{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.025em;font-size:clamp(2.25rem,4vw,3.65rem);line-height:1.35}
+html[lang=en] .infinity-eyebrow{letter-spacing:.08em;font-size:.8125rem}
+html[lang=en] .infinity-intro{letter-spacing:0;line-height:1.85;max-width:455px}
+html[lang=en] .infinity-current-phrase{letter-spacing:.01em}
+html[lang=en] .infinity-cover-bottom>p{letter-spacing:.015em}
+@media(min-width:1550px){.infinity-cover-inner{padding-block:105px 82px}}
+@media(max-width:1050px){.infinity-cover-inner,.infinity-cover-bottom{width:calc(100% - 72px)}.infinity-cover-inner{gap:0;padding-block:68px 44px}.infinity-copy h1{font-size:clamp(2rem,4.1vw,3rem);letter-spacing:.05em}.infinity-scene{margin-right:-20px}.infinity-current-phrase{font-size:1rem}.infinity-actions{gap:14px}.infinity-enter{gap:16px;padding-inline:17px}.infinity-cover{min-height:640px}}
+@media(max-width:760px){.infinity-cover-inner{grid-template-columns:1fr;padding-block:42px 25px;gap:3px;max-width:580px}.infinity-cover-inner,.infinity-cover-bottom{width:calc(100% - 48px)}.infinity-copy{padding-block:0;text-align:center;max-width:none}.infinity-eyebrow{margin-bottom:21px;font-size:.8125rem;letter-spacing:.12em}.infinity-copy h1{font-size:clamp(2rem,6vw,2.75rem);line-height:1.6}.infinity-intro{font-size:1.0625rem;line-height:1.85;max-width:430px;margin:18px auto 0}.infinity-actions{justify-content:center;margin-top:26px;gap:22px}.infinity-scene{width:min(100%,500px);margin:0 auto}.infinity-diagram{margin-top:6px}.infinity-phrases{margin-top:-23px;min-height:75px;padding-inline:8px}.infinity-current-phrase{font-size:1rem}.infinity-cover-bottom{gap:15px;padding-block:14px 18px}.infinity-cover-bottom>p{font-size:.8125rem;max-width:280px;letter-spacing:.03em}.infinity-controls{gap:8px}.infinity-cover{min-height:0}.infinity-controls button{font-size:.75rem;padding:5px 8px;min-height:36px}html[lang=en] .infinity-copy h1{font-size:clamp(2.1rem,7vw,3rem)}html[lang=en] .infinity-eyebrow{font-size:.75rem;letter-spacing:.04em}}
+@media(max-width:390px){.infinity-cover-inner,.infinity-cover-bottom{width:calc(100% - 40px)}.infinity-cover-inner{padding-top:35px}.infinity-copy h1{font-size:1.93rem;letter-spacing:.035em}.infinity-eyebrow{font-size:.75rem;letter-spacing:.06em}.infinity-intro{font-size:1rem}.infinity-actions{gap:12px}.infinity-enter{font-size:.9375rem;padding:10px 14px;gap:13px;min-height:49px}.infinity-skip{font-size:.9375rem}.infinity-phrases{min-height:82px;margin-top:-12px}.infinity-current-phrase{font-size:.9375rem;letter-spacing:.025em}.infinity-cover-bottom{align-items:start}.infinity-cover-bottom>p{max-width:180px;font-size:.75rem}.infinity-controls{flex-wrap:wrap;max-width:110px}html[lang=en] .infinity-eyebrow{font-size:.6875rem}html[lang=en] .infinity-copy h1{font-size:2rem}html[lang=en] .infinity-actions{gap:15px}}
+@media(prefers-reduced-motion:reduce){.infinity-cover *,.infinity-cover *::before,.infinity-cover *::after{animation:none!important;transition:none!important}.infinity-current-phrase{opacity:1;transform:none}.infinity-loop-light{stroke-dasharray:0 100}.infinity-cover[data-phase=arrived] .infinity-calculus,.infinity-cover[data-phase=arrived] .infinity-equation{opacity:1}}
+
+.infinity-symbol-trigger{display:block;width:100%;padding:0;border:0;border-radius:16px;background:transparent;color:inherit;line-height:0;cursor:pointer}.infinity-symbol-trigger:focus-visible{outline:2px solid #f6d28e;outline-offset:2px;border-radius:16px}@media(hover:hover){.infinity-symbol-trigger:hover .infinity-loop-base{stroke-width:3.4}}
+.infinity-cover-bottom{padding-right:80px}
+@media(max-width:760px){.infinity-cover-bottom{padding-right:68px}.infinity-controls{flex-shrink:1}}
+
+.infinity-controls button{white-space:nowrap;flex-shrink:0}
+
+.infinity-cover[data-entered=false]{min-height:calc(100svh - 82px)}
+.infinity-cover[data-entered=false] .infinity-cover-bottom{padding-right:0}
+@media(max-width:760px){.infinity-phrases{min-height:119px}.infinity-derivative-equation,.infinity-integral-equation{top:28px}.infinity-integral-equation{font-size:.875rem;gap:5px 7px}.infinity-cover[data-entered=false] .infinity-cover-inner{padding-block:42px 19px}}
+@media(max-width:390px){.infinity-phrases{min-height:134px}.infinity-integral-equation{font-size:.8125rem;gap:4px 5px}.infinity-cover[data-entered=false] .infinity-cover-inner{padding-top:35px}}
+@media(prefers-reduced-motion:reduce){.infinity-cover[data-phase=arrived] .infinity-derivative-equation{opacity:0}}
+
+/* Native hidden must also override the cover's authored flex layout. */
+.infinity-cover[hidden]{display:none!important}
+.infinity-equation{color:#c4d2df}
+.infinity-controls button,.infinity-motion-status,.infinity-cover-bottom>p{font-size:.875rem}
+html[lang=en] .infinity-eyebrow{font-size:.875rem}
+@media(max-width:760px){.infinity-eyebrow{font-size:.875rem}.infinity-controls button{font-size:.875rem;min-height:40px}.infinity-cover-bottom>p{font-size:.875rem;line-height:1.8}.infinity-motion-status{font-size:.875rem}.infinity-current-phrase{font-size:1rem}}
+@media(max-width:390px){.infinity-eyebrow,html[lang=en] .infinity-eyebrow{font-size:.875rem}.infinity-current-phrase{font-size:1rem}.infinity-integral-equation{font-size:.875rem}.infinity-controls{max-width:148px}.infinity-cover-bottom>p{max-width:170px}}
+@media(max-width:360px){.infinity-cover-bottom{flex-wrap:wrap}.infinity-cover-bottom>p{max-width:none;flex-basis:100%}.infinity-controls{max-width:none;justify-content:flex-start}}
